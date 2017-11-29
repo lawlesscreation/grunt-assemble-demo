@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                 options: {
                     layout: '<%= config.src %>/layouts/patterns.hbs'
                 },
-                files: {'<%= config.dist %>/': ['<%= config.src %>/patterns/**/*.hbs']}
+                files: {'<%= config.dist %>/': ['<%= config.src %>/patterns/**/*.md']}
             }
         },
 
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
             html: {
                 files: [
                     '<%= config.src %>/layouts/**/*.hbs',
-                    '<%= config.src %>/patterns/**/*.{html,hbs,json}'
+                    '<%= config.src %>/patterns/**/*.{html,md,json}'
                 ],
                 tasks: ['assemble:patterns']
             }
