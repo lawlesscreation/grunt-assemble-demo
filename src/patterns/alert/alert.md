@@ -4,6 +4,7 @@ Some notes about the pattern.
 
 {{> alert modifiers="warning" }}
 
+
 ## Code
 
 ```html
